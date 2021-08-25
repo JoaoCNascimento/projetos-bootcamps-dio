@@ -1,0 +1,15 @@
+server:
+  port: ${PORT:0}
+    
+eureka:
+  instance: 
+    hostname: localhost
+    port: 8761
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+    server:
+      wait-time-in-ms-when-sync-empty: 3000  
