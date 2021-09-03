@@ -22,8 +22,6 @@ import java.util.Map;
 import javax.validation.Valid;
 
 import com.digital.crud.reuniao.saladereuniao.exception.ResourceNotFoundException;
-import com.digital.crud.reuniao.saladereuniao.exception.GlobalExceptionHandler;
-import com.digital.crud.reuniao.saladereuniao.exception.ErrorDetails;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
